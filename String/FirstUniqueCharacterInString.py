@@ -30,3 +30,7 @@ def firstUniqueChar(input="leetcode"):
 print(firstUniqueChar(input="loveleetcode"))
 print(firstUniqueChar())
 
+
+
+
+

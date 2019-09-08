@@ -38,3 +38,6 @@ inputK = [3, 3, 2]
 
 for index in range(len(input)):
     print("Result using dictionary: {}".format(containDuplicate2(inputArray=input[index], k=inputK[index])))
+
+
+

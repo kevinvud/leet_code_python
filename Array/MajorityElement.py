@@ -55,3 +55,6 @@ def majorityElemenMoreSpace(input):
 arrayInput = [3,1,2,4,3,3,2,4]
 print(majorityElement(input=arrayInput))
 print(majorityElemenMoreSpace(input=arrayInput))
+
+
+

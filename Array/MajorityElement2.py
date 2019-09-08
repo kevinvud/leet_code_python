@@ -60,3 +60,6 @@ def majorityElement2(input):
 
 arrayInput = [1,1,1,3,3,2,2,2,4,4,4,4]
 print(majorityElement2(input=arrayInput))
+
+
+

@@ -38,3 +38,7 @@ def validPalindrome(input, initialIndex, inputLen, alreadyRemoved = False):
 input = "abca"
 
 print(validPalindrome2(input=input))
+
+
+
+

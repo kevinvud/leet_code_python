@@ -47,3 +47,6 @@ input =[[1,1,1,3,3,4,3,2,4,2], [1,2,3,1], [1,2,3,4]]
 for index in input:
     print("Result using dictionary: {}".format(containDuplicate(index)))
     print("Result using set: {}".format(containDuplicateUsingSet(index)))
+
+
+

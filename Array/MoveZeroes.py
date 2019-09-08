@@ -50,3 +50,6 @@ def moveZeroesMoreSpace(input):
 input = [0,1,0,3,12,10,0,1]
 print(moveZeroes(input=input))
 print(moveZeroesMoreSpace(input=input))
+
+
+

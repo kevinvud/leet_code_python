@@ -50,3 +50,6 @@ inputArray = [[7,8,9,11,12], [3,4,-1,1], [1,2,9,0,3]]
 
 for input in inputArray:
     print(firstMissingPositive(input=input))
+
+
+
