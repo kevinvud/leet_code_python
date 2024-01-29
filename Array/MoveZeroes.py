@@ -12,6 +12,23 @@ Minimize the total number of operations.
 
 """
 
+
+def move_zeroes(input):
+    counter = 0
+    for index in range(len(input)):
+        if input[index] != 0:
+            input[counter] = input[index]
+            counter += 1
+
+    while counter < len(input):
+        input[counter] = 0
+        counter += 1
+
+    return input
+
+print(move_zeroes(input=[0,1,0,3,12,0,-1,1]))
+
+
 def moveZeroes(input):
 
     # O(1) space complexity
@@ -31,25 +48,25 @@ def moveZeroes(input):
     return input
 
 
-def moveZeroesMoreSpace(input):
-
-    # O(n) space complexity
-
-    output = []
-    counter = 0
-    for index in input:
-        if index != 0:
-            output.append(index)
-            counter += 1
-
-    while counter < len(input):
-        output.append(0)
-        counter += 1
-    return output
-
-input = [0,1,0,3,12,10,0,1]
-print(moveZeroes(input=input))
-print(moveZeroesMoreSpace(input=input))
+# def moveZeroesMoreSpace(input):
+#
+#     # O(n) space complexity
+#
+#     output = []
+#     counter = 0
+#     for index in input:
+#         if index != 0:
+#             output.append(index)
+#             counter += 1
+#
+#     while counter < len(input):
+#         output.append(0)
+#         counter += 1
+#     return output
+#
+# input = [0,1,0,3,12,10,0,1]
+# print(moveZeroes(input=input))
+# print(moveZeroesMoreSpace(input=input))
 
 
 

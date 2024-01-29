@@ -39,7 +39,25 @@ def removeDuplicateFromSortedArray(inputArray):
     return output
 
 
+def removeDuplicateFromSortedArrayConstantSpace(inputArray):
+
+    if len(inputArray) == 0 or len(inputArray) == 1:
+        return len(inputArray)
+
+    counter = 0
+
+    for i in range(0, len(inputArray) - 1):
+        if inputArray[i] != inputArray[i + 1]:
+            inputArray[counter] = inputArray[i]
+            counter += 1
+
+    inputArray[counter] = inputArray[len(inputArray) - 1]
+
+    return inputArray[:counter + 1]
+
+
+
 input = [[1,1,2], [0,0,0,1,1,1,2,2,3,3,4,4]]
 
 for index in input:
-    print(removeDuplicateFromSortedArray(index))
+    print(removeDuplicateFromSortedArrayConstantSpace(index))
